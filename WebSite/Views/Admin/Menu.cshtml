@@ -1,0 +1,20 @@
+﻿@model List<WebSite.Models.MenuUIModel>
+
+@foreach (var menuItem in Model)
+{
+     <!-- Navigation item -->
+    <ul>
+        <li><a href="@menuItem.Item.URL">@menuItem.Item.Name</a>
+            @if (menuItem.Children != null)
+            {
+                <ul>
+                @foreach (var subItem in menuItem.Children)
+                {                    
+                   <li><a href="@subItem.URL">@subItem.Name</a></li>                                
+                }
+                </ul>
+            }        
+            
+        </li>        
+    </ul>
+}

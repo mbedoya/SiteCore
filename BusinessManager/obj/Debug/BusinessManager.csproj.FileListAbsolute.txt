@@ -1,0 +1,16 @@
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\EcoCore\BusinessManager\bin\Debug\BusinessManager.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\EcoCore\BusinessManager\bin\Debug\MySql.Data.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\EcoCore\BusinessManager\bin\Debug\Utilities.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\EcoCore\BusinessManager\obj\Debug\BusinessManager.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\EcoCore\BusinessManager\obj\Debug\BusinessManager.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\EcoCore\BusinessManager\bin\Debug\BusinessManager.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\EcoCore\BusinessManager\bin\Debug\Utilities.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\EcoCore\BusinessManager\obj\Debug\BusinessManager.csprojResolveAssemblyReference.cache
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessManager\bin\Debug\BusinessManager.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessManager\bin\Debug\BusinessManager.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessManager\bin\Debug\MySql.Data.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessManager\bin\Debug\Utilities.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessManager\bin\Debug\Utilities.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessManager\obj\Debug\BusinessManager.csprojResolveAssemblyReference.cache
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessManager\obj\Debug\BusinessManager.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessManager\obj\Debug\BusinessManager.pdb

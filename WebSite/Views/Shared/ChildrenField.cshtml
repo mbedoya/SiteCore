@@ -1,0 +1,3 @@
+﻿@model WebSite.Models.ChildrenFieldUIModel
+
+@Html.ActionLink("View", "Index", "Manage" + @Model.ClassName, new { id = @Model.ID }, new {}) (@Model.Count)

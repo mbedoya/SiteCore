@@ -1,0 +1,2 @@
+obj\Debug\_BusinessWorkflow.g.cs
+obj\Debug\MainActivity.g.cs

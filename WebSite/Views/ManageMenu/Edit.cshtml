@@ -1,0 +1,76 @@
+@using System.Web.Optimization
+
+@model BusinessManager.Models.MenuDataModel
+
+@{
+    ViewBag.Title = "Menu Edicion";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Edicion de Menu</h2>
+
+@using ( Html.BeginForm(null, null, FormMethod.Post ,new { enctype = "multipart/form-data" })) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend></legend>
+
+        
+	<div class="editor-label">
+	 @Html.LabelFor(model => model.Name)
+	</div>
+	<div class="editor-field">
+	 @Html.EditorFor(model => model.Name, new { maxLength = 50 })
+	 @Html.ValidationMessageFor(model => model.Name)
+	</div>
+	<div class="editor-label">
+	 @Html.LabelFor(model => model.URL)
+	</div>
+	<div class="editor-field">
+	 @Html.EditorFor(model => model.URL, new { maxLength = 100 })
+	 @Html.ValidationMessageFor(model => model.URL)
+	</div>
+	<div class="editor-label">
+	 @Html.LabelFor(model => model.MenuOrder)
+	</div>
+	<div class="editor-field">
+	 @Html.EditorFor(model => model.MenuOrder, new { maxLength = 10})
+	 @Html.ValidationMessageFor(model => model.MenuOrder)
+	</div>
+	 @{ Html.RenderAction("ForeignKeyDisplay", "Admin", new { fieldName = "MenuID", fieldValue = @Model != null ? @Model.MenuID : 0, primaryTable = "Menu", readOnly = false }); }
+
+        @Html.HiddenFor(model => model.ID)
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @if (Session["menuParentID"] != null)
+    {
+    @Html.ActionLink("Back to List", "Index", new { id = Convert.ToInt32(Session["menuParentID"]) })    
+    }
+    else
+    {
+    @Html.ActionLink("Back to List", "Index")
+    }
+</div>
+
+@section scripts{ 
+
+    @Scripts.Render("~/Scripts/jquery.js")
+    @Scripts.Render("~/Scripts/ckeditor/ckeditor.js") 
+    @Scripts.Render("~/Scripts/jquery.fancybox.js")
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.fancybox').fancybox();
+        });
+    </script>
+}
+
+@section styles{ 
+    @Styles.Render("~/Content/css/jquery.fancybox.css")
+}

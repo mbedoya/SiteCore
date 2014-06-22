@@ -1,0 +1,171 @@
+﻿@using System.Web.Optimization
+
+@{
+    string siteName = WebSite.WebUtilities.Misc.GetAppSetting(WebSite.WebUtilities.Const.AppSettings.SiteName);
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css/layout4_setup.css")
+    @Styles.Render("~/Content/css/layout4_text.css")
+    @Styles.Render("~/Content/css/styles.css")
+</head>
+<body>
+
+    <!-- Main Page Container -->
+  <div class="page-container">
+
+   <!-- For alternative headers START PASTE here -->
+
+    <!-- A. HEADER -->      
+    <div class="header">
+      
+      <!-- A.1 HEADER TOP -->
+      <div class="header-top">
+        
+        <!-- Sitelogo and sitename -->
+        <a class="sitelogo" href="#" title="Go to Start page"></a>
+        <div class="sitename">
+          <h1><a href="/" title="Go to Start page">@siteName</a></h1>
+          <h2></h2>
+        </div>
+    
+        <!-- Navigation Level 0 -->
+        <div class="nav0">
+          <ul>
+            <li><a href="#" title="Pagina home in Italiano"><img src="./img/flag_italy.gif" alt="Image description" /></a></li>
+            <li><a href="#" title="Homepage auf Deutsch"><img src="./img/flag_germany.gif" alt="Image description" /></a></li>
+            <li><a href="#" title="Hemsidan p&aring; svenska"><img src="./img/flag_sweden.gif" alt="Image description" /></a></li>
+          </ul>
+        </div>			
+
+        <!-- Navigation Level 1 -->
+        <div class="nav1">
+          <ul>
+            <li><a href="#" title="Go to Start page">Home</a></li>
+            <li><a href="#" title="Get to know who we are">About</a></li>
+            <li><a href="#" title="Get in touch with us">Contact</a></li>																		
+            <li><a href="#" title="Get an overview of website">Sitemap</a></li>
+          </ul>
+        </div>              
+      </div>
+      
+      <!-- A.3 HEADER BOTTOM -->
+      <div class="header-bottom">
+      
+        <!-- Navigation Level 2 (Drop-down menus) -->
+        <div class="nav2">
+	
+          <!-- Navigation item -->
+          <ul>
+            <li><a href="/">Home</a></li>
+          </ul>
+
+            <!-- Navigation item -->
+          <ul>
+            <li><a href="/campaign">Campaigns</a></li>
+          </ul>
+          
+          <!-- Navigation item -->
+          <ul>
+            <li><a href="/admin">Admin</a></li>
+          </ul>     
+          
+        </div>
+	  </div>
+
+      <!-- A.4 HEADER BREADCRUMBS -->
+
+      <!-- Breadcrumbs -->
+      <div class="header-breadcrumbs">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Webdesign</a></li>
+          <li><a href="#">Templates</a></li>
+          <li>Multiflex-3</li>
+        </ul>
+
+        <!-- Search form -->                  
+        <div class="searchform">
+          <form action="#" method="get" class="form">
+            <fieldset>
+              <input value=" Search..." name="field" class="field" />
+              <input type="submit" value="GO!" name="button" class="button" />
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- For alternative headers END PASTE here -->
+
+    <!-- B. MAIN -->
+    <div class="main">
+ 
+      <!-- B.1 MAIN NAVIGATION -->
+      <div class="main-navigation">
+                   
+        
+      </div>
+ 
+      <!-- B.2 MAIN CONTENT -->
+      <div class="main-content">
+         @RenderBody()
+      </div>
+                
+      <!-- B.3 SUBCONTENT -->
+      <div class="main-subcontent">
+
+        <!-- Subcontent unit -->
+        <div class="subcontent-unit-border">
+          <div class="round-border-topleft"></div><div class="round-border-topright"></div>
+          <h1>Layout Options</h1>
+          <p>Multiflex-3 has five layout styles, for 1-column, 2-column and 3-column pages.</p>
+          <p>Multiflex-3 also has seven header layout styles.</p>
+          <p>See links in navigation bar for more details.</p>
+        </div>
+
+        <!-- Subcontent unit -->
+        <div class="subcontent-unit-border">
+          <div class="round-border-topleft"></div><div class="round-border-topright"></div>
+          <h1>Code Structure</h1>
+          <p>The CSS code has been modularized into two files for easier maintenance:</p>   
+          <p>1) <strong>setup.css</strong> defines the basic layout structure of the page.</p>
+          <p>2) <strong>text.css</strong> defines the text formats available for the page main section.</p>
+        </div>
+
+        <!-- Subcontent unit -->
+        <div class="subcontent-unit-border-orange">
+          <div class="round-border-topleft"></div><div class="round-border-topright"></div>
+          <h1 class="orange">About me</h1>
+          <p>My name is Wolfgang, and you may be surprised to hear that for my real job I work as a full-time pastor for a Christian church. Feel free to visit our global <a href="http://www.sda.org/">church website</a>.</p>
+          <p>In 2006 I decided to start my own website. When surfing around I didn't find the template I needed. So I began to develop my own, with trials, errors and many long nights. About half a dozen experiments and six months later, I feel that I am coming closer to the design I need! But I will try to push it one step further, and make a liquid layout.</p>
+          <p>I have profited much from others who have shared their CSS-knowledge on the internet. The best way to show my appreciation is by sharing my results with others. So if this template is what you were looking for, then feel free to use and enjoy it!</p>
+          <p>If you want to get in touch with me, you can check my <a href="http://www.1-2-3-4.info/"> website</a> or email me via <a href="http://www.oswd.org/user/profile/id/10227/">OSWD.org</a> contact form.</p>
+          <p class="center"><img class="center" src="./img/myphoto.jpg" alt="Image description" /></p>
+        </div>
+
+        <!-- Subcontent unit -->
+        <div class="subcontent-unit-border-green">
+          <div class="round-border-topleft"></div><div class="round-border-topright"></div>
+          <h1 class="green">It's free!</h1>
+          <p>Enjoy the template for free. There are no restrictions in the license. As a sign of appreciation, please keep the author credits "<a href="http://www.1-2-3-4.info/">Design by Wolfgang</a>" in the template footer. Thanks!</p>
+        </div>
+      </div>
+    </div>
+      
+    <!-- C. FOOTER AREA -->      
+
+    <div class="footer">
+      <p>Copyright &copy; 2007 Your Company | All Rights Reserved</p>
+      <p class="credits">Design by <a href="http://www.1-2-3-4.info/" title="Designer Homepage">Wolfgang</a>  | Modified by <a href="#" title="Modifyer Homepage">Your Name</a> | Powered by <a href="#" title="CMS Homepage">Your CMS</a> | <a href="http://validator.w3.org/check?uri=referer" title="Validate XHTML code">XHTML 1.0</a> | <a href="http://jigsaw.w3.org/css-validator/" title="Validate CSS code">CSS 2.0</a></p>
+    </div>      
+  </div> 
+
+    @RenderSection("scripts", required: false)
+   
+</body>
+</html>

@@ -1,0 +1,9 @@
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\EcoCore\Utilities\bin\Debug\Utilities.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\EcoCore\Utilities\obj\Debug\Utilities.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\EcoCore\Utilities\obj\Debug\Utilities.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\EcoCore\Utilities\bin\Debug\Utilities.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\Utilities\bin\Debug\Utilities.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\Utilities\bin\Debug\Utilities.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\Utilities\obj\Debug\Utilities.csprojResolveAssemblyReference.cache
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\Utilities\obj\Debug\Utilities.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\Utilities\obj\Debug\Utilities.pdb
