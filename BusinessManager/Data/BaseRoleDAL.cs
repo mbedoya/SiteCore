@@ -181,12 +181,12 @@ namespace BusinessManager.Data
             return roles;
         }
 
-        public static int GetCount(int id)
+        public static int GetUserroleCount(int? id)
         {
             int count = 0;
 
             MySqlConnection connection = new MySqlConnection(ConfigurationManager.AppSettings[BusinessUtilies.Const.Database.AppSetting]);
-            MySqlDataAdapter adapter = new MySqlDataAdapter("Core_GetRoleCount", connection);
+            MySqlDataAdapter adapter = new MySqlDataAdapter("Core_GetRoleUserroleCount", connection);
             MySqlParameter paramID = new MySqlParameter("pId", id);
             paramID.Direction = ParameterDirection.Input;
             adapter.SelectCommand.CommandType = CommandType.StoredProcedure;

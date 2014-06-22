@@ -66,15 +66,15 @@ namespace WebSite.Controllers.Admin
             return Json(new { success=true }, JsonRequestBehavior.AllowGet);
         }
 
-        public ActionResult ChildrenField(int id)
+        public ActionResult UserroleChildrenField(int id)
         {
-            int count = RoleBO.GetInstance().GetCount(id);
+            int count = RoleBO.GetInstance().GetUserroleCount(id);
 
             ChildrenFieldUIModel model = new ChildrenFieldUIModel()
             {
                 ID = id,
                 Count = count,
-                ClassName = ""
+                ClassName = "Userrole"
             };
 
             return View("ChildrenField", model);

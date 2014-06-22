@@ -48,9 +48,9 @@ namespace BusinessManager.Business
             RoleDAL.Delete(id);
         }
 
-        public int GetCount(int roleID)
+        public int GetUserroleCount(int? roleID)
         {
-            return RoleDAL.GetCount(roleID);
+            return RoleDAL.GetUserroleCount(roleID);
         }
     }
 }

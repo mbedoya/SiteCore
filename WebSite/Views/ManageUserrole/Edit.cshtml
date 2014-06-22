@@ -3,11 +3,11 @@
 @model BusinessManager.Models.UserroleDataModel
 
 @{
-    ViewBag.Title = "Roles de Usuario Edicion";
+    ViewBag.Title = "Roles Usuario Edicion";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h2>Edicion de Roles de Usuario</h2>
+<h2>Edicion de Roles Usuario</h2>
 
 @using ( Html.BeginForm(null, null, FormMethod.Post ,new { enctype = "multipart/form-data" })) {
     @Html.ValidationSummary(true)
@@ -19,7 +19,7 @@
 	 @{ Html.RenderAction("ForeignKeyDisplay", "Admin", new { fieldName = "UserID", fieldValue = @Model != null ? @Model.UserID : 0, primaryTable = "User", readOnly = false }); }
 	 @{ Html.RenderAction("ForeignKeyDisplay", "Admin", new { fieldName = "RoleID", fieldValue = @Model != null ? @Model.RoleID : 0, primaryTable = "Role", readOnly = false }); }
 
-        @Html.HiddenFor(model => model.)
+        @Html.HiddenFor(model => model.ID)
 
         <p>
             <input type="submit" value="Save" />

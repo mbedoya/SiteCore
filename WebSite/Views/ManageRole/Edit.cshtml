@@ -3,11 +3,11 @@
 @model BusinessManager.Models.RoleDataModel
 
 @{
-    ViewBag.Title = "Rol Edicion";
+    ViewBag.Title = "Roles Edicion";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h2>Edicion de Rol</h2>
+<h2>Edicion de Roles</h2>
 
 @using ( Html.BeginForm(null, null, FormMethod.Post ,new { enctype = "multipart/form-data" })) {
     @Html.ValidationSummary(true)

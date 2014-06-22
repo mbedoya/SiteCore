@@ -23,8 +23,9 @@ namespace BusinessManager.Business
 
         public virtual void Update(UserroleDataModel userrole)
         {
-            if (userrole.RoleID > 0 && userrole.UserID > 0)
-            {               
+            if (userrole.ID > 0)
+            {
+                
 
                 UserroleDAL.Update(userrole);
             }

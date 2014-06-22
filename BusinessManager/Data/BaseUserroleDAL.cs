@@ -24,19 +24,23 @@ namespace BusinessManager.Data
 
             foreach (DataRow item in results.Rows)
             {
-                UserroleDataModel userrole = new UserroleDataModel();
+                UserroleDataModel userrole = new UserroleDataModel();                
+                
+	 if (item["ID"].GetType() != typeof(DBNull))
+	 {
+	 userrole.ID = Convert.ToInt32(item["ID"]);
+	 }
+	 if (item["UserID"].GetType() != typeof(DBNull))
+	 {
+	 userrole.UserID = Convert.ToInt32(item["UserID"]);
+	 }
+	 if (item["RoleID"].GetType() != typeof(DBNull))
+	 {
+	 userrole.RoleID = Convert.ToInt32(item["RoleID"]);
+	 }
 
-                if (item["UserID"].GetType() != typeof(DBNull))
-                {
-                    userrole.UserID = Convert.ToInt32(item["UserID"]);
-                }
-                if (item["RoleID"].GetType() != typeof(DBNull))
-                {
-                    userrole.RoleID = Convert.ToInt32(item["RoleID"]);
-                }
-
-                userroles.Add(userrole);
-            }
+                userroles.Add(userrole);                 
+            }            
 
             return userroles;
         }
@@ -56,19 +60,23 @@ namespace BusinessManager.Data
 
             adapter.Fill(results);
 
-            if (results.Rows.Count > 0)
+            if(results.Rows.Count > 0)
             {
                 DataRow item = results.Rows[0];
-                userrole = new UserroleDataModel();
-
-                if (item["UserID"].GetType() != typeof(DBNull))
-                {
-                    userrole.UserID = Convert.ToInt32(item["UserID"]);
-                }
-                if (item["RoleID"].GetType() != typeof(DBNull))
-                {
-                    userrole.RoleID = Convert.ToInt32(item["RoleID"]);
-                }
+                userrole = new UserroleDataModel();                
+                
+	 if (item["ID"].GetType() != typeof(DBNull))
+	 {
+	 userrole.ID = Convert.ToInt32(item["ID"]);
+	 }
+	 if (item["UserID"].GetType() != typeof(DBNull))
+	 {
+	 userrole.UserID = Convert.ToInt32(item["UserID"]);
+	 }
+	 if (item["RoleID"].GetType() != typeof(DBNull))
+	 {
+	 userrole.RoleID = Convert.ToInt32(item["RoleID"]);
+	 }                
             }
 
             return userrole;
@@ -80,13 +88,16 @@ namespace BusinessManager.Data
             MySqlDataAdapter adapter = new MySqlDataAdapter("Core_UpdateUserrole", connection);
             adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
 
-
-            MySqlParameter paramUserID = new MySqlParameter("pUserID", userrole.UserID);
-            paramUserID.Direction = ParameterDirection.Input;
-            adapter.SelectCommand.Parameters.Add(paramUserID);
-            MySqlParameter paramRoleID = new MySqlParameter("pRoleID", userrole.RoleID);
-            paramRoleID.Direction = ParameterDirection.Input;
-            adapter.SelectCommand.Parameters.Add(paramRoleID);
+            
+	 MySqlParameter paramID = new MySqlParameter("pID",userrole.ID);
+	 paramID.Direction = ParameterDirection.Input;
+	 adapter.SelectCommand.Parameters.Add(paramID);
+	 MySqlParameter paramUserID = new MySqlParameter("pUserID",userrole.UserID);
+	 paramUserID.Direction = ParameterDirection.Input;
+	 adapter.SelectCommand.Parameters.Add(paramUserID);
+	 MySqlParameter paramRoleID = new MySqlParameter("pRoleID",userrole.RoleID);
+	 paramRoleID.Direction = ParameterDirection.Input;
+	 adapter.SelectCommand.Parameters.Add(paramRoleID);
 
             DataTable results = new DataTable();
             adapter.Fill(results);
@@ -95,16 +106,19 @@ namespace BusinessManager.Data
         public static void Create(UserroleDataModel userrole)
         {
             MySqlConnection connection = new MySqlConnection(ConfigurationManager.AppSettings[BusinessUtilies.Const.Database.AppSetting]);
-            MySqlDataAdapter adapter = new MySqlDataAdapter("Core_CreateUserrole", connection);
+            MySqlDataAdapter adapter = new MySqlDataAdapter("Core_CreateUserrole", connection);                        
             adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
 
-
-            MySqlParameter paramUserID = new MySqlParameter("pUserID", userrole.UserID);
-            paramUserID.Direction = ParameterDirection.Input;
-            adapter.SelectCommand.Parameters.Add(paramUserID);
-            MySqlParameter paramRoleID = new MySqlParameter("pRoleID", userrole.RoleID);
-            paramRoleID.Direction = ParameterDirection.Input;
-            adapter.SelectCommand.Parameters.Add(paramRoleID);
+            
+	 MySqlParameter paramID = new MySqlParameter("pID",userrole.ID);
+	 paramID.Direction = ParameterDirection.Input;
+	 adapter.SelectCommand.Parameters.Add(paramID);
+	 MySqlParameter paramUserID = new MySqlParameter("pUserID",userrole.UserID);
+	 paramUserID.Direction = ParameterDirection.Input;
+	 adapter.SelectCommand.Parameters.Add(paramUserID);
+	 MySqlParameter paramRoleID = new MySqlParameter("pRoleID",userrole.RoleID);
+	 paramRoleID.Direction = ParameterDirection.Input;
+	 adapter.SelectCommand.Parameters.Add(paramRoleID);
 
             DataTable results = new DataTable();
             adapter.Fill(results);
@@ -128,19 +142,23 @@ namespace BusinessManager.Data
 
             foreach (DataRow item in results.Rows)
             {
-                UserroleDataModel userrole = new UserroleDataModel();
+                UserroleDataModel userrole = new UserroleDataModel();                
+                
+	 if (item["ID"].GetType() != typeof(DBNull))
+	 {
+	 userrole.ID = Convert.ToInt32(item["ID"]);
+	 }
+	 if (item["UserID"].GetType() != typeof(DBNull))
+	 {
+	 userrole.UserID = Convert.ToInt32(item["UserID"]);
+	 }
+	 if (item["RoleID"].GetType() != typeof(DBNull))
+	 {
+	 userrole.RoleID = Convert.ToInt32(item["RoleID"]);
+	 }
 
-                if (item["UserID"].GetType() != typeof(DBNull))
-                {
-                    userrole.UserID = Convert.ToInt32(item["UserID"]);
-                }
-                if (item["RoleID"].GetType() != typeof(DBNull))
-                {
-                    userrole.RoleID = Convert.ToInt32(item["RoleID"]);
-                }
-
-                userroles.Add(userrole);
-            }
+                userroles.Add(userrole);                 
+            }            
 
             return userroles;
         }
@@ -153,7 +171,7 @@ namespace BusinessManager.Data
             MySqlDataAdapter adapter = new MySqlDataAdapter("Core_GetUserrolesByRole", connection);
 
             MySqlParameter paramID = new MySqlParameter("pID", id);
-            paramID.Direction = ParameterDirection.Input;
+            paramID.Direction = ParameterDirection.Input;        
             adapter.SelectCommand.Parameters.Add(paramID);
 
             adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
@@ -163,19 +181,23 @@ namespace BusinessManager.Data
 
             foreach (DataRow item in results.Rows)
             {
-                UserroleDataModel userrole = new UserroleDataModel();
+                UserroleDataModel userrole = new UserroleDataModel();                
+                
+	 if (item["ID"].GetType() != typeof(DBNull))
+	 {
+	 userrole.ID = Convert.ToInt32(item["ID"]);
+	 }
+	 if (item["UserID"].GetType() != typeof(DBNull))
+	 {
+	 userrole.UserID = Convert.ToInt32(item["UserID"]);
+	 }
+	 if (item["RoleID"].GetType() != typeof(DBNull))
+	 {
+	 userrole.RoleID = Convert.ToInt32(item["RoleID"]);
+	 }
 
-                if (item["UserID"].GetType() != typeof(DBNull))
-                {
-                    userrole.UserID = Convert.ToInt32(item["UserID"]);
-                }
-                if (item["RoleID"].GetType() != typeof(DBNull))
-                {
-                    userrole.RoleID = Convert.ToInt32(item["RoleID"]);
-                }
-
-                userroles.Add(userrole);
-            }
+                userroles.Add(userrole);                 
+            }            
 
             return userroles;
         }
@@ -197,15 +219,15 @@ namespace BusinessManager.Data
 
             if (results.Rows.Count > 0)
             {
-                DataRow item = results.Rows[0];
+                DataRow item = results.Rows[0];                
 
                 if (item["count"].GetType() != typeof(DBNull))
                 {
                     count = Convert.ToInt32(item["count"]);
-                }
+                }                
             }
 
-            return count;
+            return count;       
         }
 
         public static void Delete(int id)
@@ -217,7 +239,7 @@ namespace BusinessManager.Data
 
             MySqlParameter paramID = new MySqlParameter("pID", id);
             paramID.Direction = ParameterDirection.Input;
-            adapter.SelectCommand.Parameters.Add(paramID);
+            adapter.SelectCommand.Parameters.Add(paramID);            
 
             DataTable results = new DataTable();
             adapter.Fill(results);
