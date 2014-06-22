@@ -50,10 +50,10 @@ C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\EcoCore\WebSite\bin\Busin
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\EcoCore\WebSite\bin\Utilities.pdb
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\EcoCore\WebSite\bin\BusinessWorkflow.dll
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\EcoCore\WebSite\bin\BusinessWorkflow.pdb
-C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\WebSite.dll
-C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\WebSite.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\WebSite_Core.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\WebSite_Core.pdb
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\Antlr3.Runtime.dll
-C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\BusinessManager.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\BusinessManager_Core.dll
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\BusinessWorkflow.dll
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\Newtonsoft.Json.dll
@@ -69,11 +69,11 @@ C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\Syst
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\System.Web.WebPages.Deployment.dll
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\System.Web.WebPages.dll
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\System.Web.WebPages.Razor.dll
-C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\Utilities.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\Utilities_Core.dll
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\WebGrease.dll
-C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\BusinessManager.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\BusinessManager_Core.pdb
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\BusinessWorkflow.pdb
-C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\Utilities.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\Utilities_Core.pdb
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\Antlr3.Runtime.pdb
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\Newtonsoft.Json.xml
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\System.Web.Optimization.xml
@@ -100,5 +100,5 @@ C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\es\S
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\es\System.Web.WebPages.Razor.resources.dll
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\obj\Debug\WebSite.csprojResolveAssemblyReference.cache
-C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\obj\Debug\WebSite.dll
-C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\obj\Debug\WebSite.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\obj\Debug\WebSite_Core.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\obj\Debug\WebSite_Core.pdb
