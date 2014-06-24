@@ -46,7 +46,7 @@ namespace WebSite.Controllers.Admin
 
         public ActionResult ForeignKeyDisplay(string fieldName, int? fieldValue, string primaryTable, bool readOnly)
         {            
-            Type t = Type.GetType("BusinessManager.Business." + primaryTable + "BO, BusinessManager");
+            Type t = Type.GetType("BusinessManager.Business." + primaryTable + "BO, BusinessManager_Core");
             List<BaseUIModel> list = null;
 
             if (t != null)
