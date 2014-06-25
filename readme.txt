@@ -60,3 +60,4 @@ public ActionResult ForeignKeyDisplay(string fieldName, int? fieldValue, string 
 12. Replace "ForeignKeyDisplay", "Admin" to "ForeignKeyDisplay", "Home"
 13. Move ForeignKeyDisplay.cshtml to Shared
 14. Adicionar System.Web to BusinessManager
+15. Adicionar filters.Add(new CheckAuthentication()); to FilterConfig en Website
