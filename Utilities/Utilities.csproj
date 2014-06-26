@@ -41,12 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cache\CacheManager.cs" />
+    <Compile Include="Cache\ObjectStore.cs" />
+    <Compile Include="Cache\StoreItem.cs" />
     <Compile Include="FileManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\EncryptionManager.cs" />
     <Compile Include="Security\SecurityManager.cs" />
     <Compile Include="Security\SecurityUserModel.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

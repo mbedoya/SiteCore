@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Utilities.Cache;
+using WebSite.WebUtilities;
 
 namespace WebSite.Controllers.Admin
 {
@@ -16,7 +18,41 @@ namespace WebSite.Controllers.Admin
 
         public ActionResult Index(int id=0)
         {
-            return View(MenuBO.GetInstance().GetAll(id));
+            List<MenuDataModel> menus = MenuBO.GetInstance().GetAll(id);
+
+            CacheManager cache = CacheManager.GetInstance();
+
+            int count=1000000;
+
+            DateTime start = DateTime.Now;
+            for (int i = 1; i <= count; i++)
+            {
+                MenuDataModel m = new MenuDataModel();
+                m.ID = i;
+                m.Name = menus[0].Name;
+                m.MenuOrder = menus[0].MenuOrder;
+
+                cache.AddObject<MenuDataModel>(m);                
+            }            
+
+            DateTime end = DateTime.Now;
+            System.IO.File.AppendAllText(@"C:\Temp\Diff.txt", count.ToString() + " Difference to Add " + Misc.GetDateDifferenceInMiliseconds(start, end) + " \r\n");
+
+            start = DateTime.Now;
+            for (int i = 1; i <= count; i++)
+            {
+                int second = 0;
+                MenuDataModel cachedMenu = cache.GetObject<MenuDataModel>(i + second);
+                if (cachedMenu == null)
+                {
+                    menus[0].ID = i + second;
+                    cache.AddObject<MenuDataModel>(menus[0]);
+                }
+            }
+            end = DateTime.Now;
+            System.IO.File.AppendAllText(@"C:\Temp\Diff.txt", count.ToString() + " Difference to Get " + Misc.GetDateDifferenceInMiliseconds(start, end) + " \r\n");
+
+            return View(menus);
         }
 
         public ActionResult Edit(int id)

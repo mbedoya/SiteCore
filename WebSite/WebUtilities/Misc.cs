@@ -10,6 +10,30 @@ namespace WebSite.WebUtilities
 {
     public class Misc
     {
+
+        public static string GetDateDifferenceInMiliseconds(DateTime startDate, DateTime endDate)
+        {
+            TimeSpan t = endDate - startDate;
+            return  t.Hours.ToString() + ":" + t.Minutes.ToString() + ":" + t.Seconds.ToString() + "." + t.Milliseconds.ToString();
+        }
+
+        public static string GetFormattedDate(DateTime date)
+        {
+            string dateString = "";
+            string dateFormat = GetAppSetting("DateFormat");
+
+            if (!String.IsNullOrEmpty(dateFormat))
+            {
+                dateString = date.ToString(dateFormat).Replace(".", "");
+            }
+            else
+            {
+                dateString = date.ToString("dd MMM, yyyy").Replace(".", "");
+            }
+
+            return dateString;
+        }
+
         public static string GetAppSetting(string name)
         {
             return ConfigurationManager.AppSettings[name];
@@ -17,8 +41,12 @@ namespace WebSite.WebUtilities
 
         public static string HTMLSubstring(string html, int length)
         {
-            string regex = @"(<.+?>|&nbsp;|&ldquo;|&.+uo;)";
-            return PreviewText(Regex.Replace(html, regex, "").Trim(), length);
+            string regex = @"(<.+?>|&ldquo;|&.+uo;)";
+            string noHtmlText = Regex.Replace(html, regex, " ").Trim();
+            //Replace whitespace
+            noHtmlText = noHtmlText.Replace("&nbsp;", " ");
+
+            return PreviewText(noHtmlText, length);
         }
 
         public static string PreviewText(string text, int length)
