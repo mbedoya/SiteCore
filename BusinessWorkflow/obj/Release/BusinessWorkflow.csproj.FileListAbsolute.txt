@@ -1,0 +1,17 @@
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\bin\Release\BusinessWorkflow.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\bin\Release\BusinessWorkflow.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\bin\Release\BusinessManager_Core.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\bin\Release\Utilities_Core.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\bin\Release\BusinessManager_Core.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\bin\Release\Utilities_Core.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\obj\Release\BusinessWorkflow.csprojResolveAssemblyReference.cache
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\obj\Release\MainActivity.g.xaml
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\obj\Release\_BusinessWorkflow.g.cs
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\obj\Release\MainActivity.g.cs
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\obj\Release\BusinessWorkflow.csproj.XamlGeneratedCodeFileListAbsolute.txt
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\obj\Release\BusinessWorkflow.csproj.XamlGeneratedXamlFileListAbsolute.txt
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\obj\Release\BusinessWorkflow.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\obj\Release\BusinessWorkflow.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\obj\Release\InProcessTempFiles\MainActivity.g.cs
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\obj\Release\InProcessTempFiles\MainActivity.g.xaml
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\obj\Release\InProcessTempFiles\_BusinessWorkflow.g.cs

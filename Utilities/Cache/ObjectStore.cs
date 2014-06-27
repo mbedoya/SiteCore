@@ -30,6 +30,23 @@ namespace Utilities.Cache
             items = new List<object>();
         }
 
+        private StoreItem<T> FindStoreItem<T>()
+        {
+            StoreItem<T> storeItem = null;
+
+            //Find Type in Headers
+            foreach (var item in items)
+            {
+                if (item.GetType() == typeof(StoreItem<T>))
+                {
+                    storeItem = (StoreItem<T>)item;
+                    break;
+                }
+            }
+
+            return storeItem;
+        }
+
         //Create Header and Add First Child
         private void CreateStoreItem<T>(T value)
         {
@@ -39,19 +56,29 @@ namespace Utilities.Cache
             items.Add(item);
         }
 
-        public void AddObject<T>(T value)
-        {            
-            StoreItem<T> storeItem = null; 
+        public void RemoveObject<T>(int? id)
+        {
+            StoreItem<T> storeItem = FindStoreItem<T>();
 
-            //Find Type in Headers
-            foreach (var item in items)
+            if (storeItem != null)
             {
-                if(item.GetType() == typeof(StoreItem<T>))
-                {
-                    storeItem = (StoreItem<T>)item;               
-                    break;
-                }
+                storeItem.RemoveObject(id);
             }
+        }
+
+        public void UpdateObject<T>(T value)
+        {
+            StoreItem<T> storeItem = FindStoreItem<T>();
+
+            if (storeItem != null)
+            {
+                storeItem.UpdateObject(value);
+            }
+        }
+
+        public void AddObject<T>(T value)
+        {
+            StoreItem<T> storeItem = FindStoreItem<T>();
 
             if (storeItem != null)
             {
@@ -65,17 +92,7 @@ namespace Utilities.Cache
 
         public bool ObjectExists<T>(int? id)
         {
-            StoreItem<T> storeItem = null;
-
-            //Find Type in Headers
-            foreach (var item in items)
-            {
-                if (item.GetType() == typeof(StoreItem<T>))
-                {
-                    storeItem = (StoreItem<T>)item;
-                    break;
-                }
-            }
+            StoreItem<T> storeItem = FindStoreItem<T>();
 
             if (storeItem != null)
             {
@@ -89,17 +106,7 @@ namespace Utilities.Cache
 
         public T GetObject<T>(int? id)
         {
-            StoreItem<T> storeItem = null;
-
-            //Find Type in Headers
-            foreach (var item in items)
-            {
-                if (item.GetType() == typeof(StoreItem<T>))
-                {
-                    storeItem = (StoreItem<T>)item;
-                    break;
-                }
-            }
+            StoreItem<T> storeItem = FindStoreItem<T>();
 
             if (storeItem != null)
             {

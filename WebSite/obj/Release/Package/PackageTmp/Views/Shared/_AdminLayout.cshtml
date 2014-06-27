@@ -1,0 +1,85 @@
+﻿@using System.Web.Optimization
+
+@{
+    string siteName = WebSite.WebUtilities.Misc.GetAppSetting(WebSite.WebUtilities.Const.AppSettings.SiteName);
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>
+        @siteName
+    </title>
+    @Styles.Render("~/Content/css/layout1_setup.css")
+    @Styles.Render("~/Content/css/layout1_text.css")
+    @Styles.Render("~/Content/css/styles.css")
+
+    @RenderSection("styles", required: false)
+</head>
+<body>
+
+    <!-- Main Page Container -->
+  <div class="page-container">
+
+   <!-- For alternative headers START PASTE here -->
+
+    <!-- A. HEADER -->      
+    <div class="header">
+      
+      <!-- A.1 HEADER TOP -->
+      <div class="header-top">
+        
+        <!-- Sitelogo and sitename -->
+        <a class="sitelogo" href="#" title="Go to Start page"></a>
+        <div class="sitename">
+          <h1><a href="/admin" title="Go to admin page">@siteName</a></h1>
+          <h2>Administration</h2>
+        </div>
+
+        <!-- Navigation Level 1 -->
+        <div class="nav1">
+          <ul>
+            <li><a href="#" title="">&nbsp;</a></li>            
+          </ul>
+        </div>              
+      </div>
+      
+      <!-- A.3 HEADER BOTTOM -->
+      <div class="header-bottom">
+      
+        <!-- Navigation Level 2 (Drop-down menus) -->
+        <div class="nav2">
+         
+            @{ Html.RenderAction("Menu", "Admin"); }
+                   
+        </div>
+	  </div>
+     
+    </div>
+
+   <!-- For alternative headers END PASTE here -->
+
+    <!-- B. MAIN -->
+    <div class="main">
+  
+      <!-- B.1 MAIN CONTENT -->
+      
+        <div class="main-content">
+            @RenderBody()
+        </div>
+    </div>
+      
+    <!-- C. FOOTER AREA -->      
+
+    <div class="footer">
+      <p>Copyright &copy; 2014 @siteName | Todos los derechos reservados</p>
+      <p class="credits">Design by <a href="http://www.1-2-3-4.info/" title="Designer Homepage">Wolfgang</a>  | Modified by <a href="/" title="@siteName Homepage">@siteName</a> </p>
+    </div>
+
+  </div>
+
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

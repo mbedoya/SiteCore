@@ -1,0 +1,93 @@
+@using System.Web.Optimization
+
+@model BusinessManager.Models.UserDataModel
+
+@{
+    ViewBag.Title = "Usuario Edicion";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Edicion de Usuario</h2>
+
+@using ( Html.BeginForm(null, null, FormMethod.Post ,new { enctype = "multipart/form-data" })) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend></legend>
+
+        
+	<div class="editor-label">
+	 @Html.LabelFor(model => model.FirstName)
+	</div>
+	<div class="editor-field">
+	 @Html.EditorFor(model => model.FirstName, new { maxLength = 30 })
+	 @Html.ValidationMessageFor(model => model.FirstName)
+	</div>
+	<div class="editor-label">
+	 @Html.LabelFor(model => model.LastName)
+	</div>
+	<div class="editor-field">
+	 @Html.EditorFor(model => model.LastName, new { maxLength = 30 })
+	 @Html.ValidationMessageFor(model => model.LastName)
+	</div>
+	<div class="editor-label">
+	 @Html.LabelFor(model => model.Email)
+	</div>
+	<div class="editor-field">
+	 @Html.EditorFor(model => model.Email, new { maxLength = 45 })
+	 @Html.ValidationMessageFor(model => model.Email)
+	</div>
+	<div class="editor-label">
+	 @Html.LabelFor(model => model.Password)
+	</div>
+	<div class="editor-field">
+	 @Html.PasswordFor(model => model.NewPassword, new { maxLength = 20 })
+	 @Html.ValidationMessageFor(model => model.Password)
+	</div>
+	<div class="editor-label">
+	 @Html.LabelFor(model => model.DateCreated)
+	</div>
+	<div class="editor-field">
+	 @Html.DisplayFor(model => model.DateCreated, new { maxLength = 10})
+	 @Html.ValidationMessageFor(model => model.DateCreated)
+	</div>
+	 @{ Html.RenderAction("ForeignKeyDisplay", "Admin", new { fieldName = "CreatedBy", fieldValue = @Model != null ? @Model.CreatedBy : 0, primaryTable = "User", readOnly = true }); }
+	 @Html.HiddenFor(model => model.DateCreated)
+	 @Html.HiddenFor(model => model.CreatedBy)
+        @Html.HiddenFor(model => model.Password)
+
+        @Html.HiddenFor(model => model.ID)
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @if (Session["userParentID"] != null)
+    {
+    @Html.ActionLink("Back to List", "Index", new { id = Convert.ToInt32(Session["userParentID"]) })    
+    }
+    else
+    {
+    @Html.ActionLink("Back to List", "Index")
+    }
+</div>
+
+@section scripts{ 
+
+    @Scripts.Render("~/Scripts/jquery.js")
+    @Scripts.Render("~/Scripts/ckeditor/ckeditor.js") 
+    @Scripts.Render("~/Scripts/jquery.fancybox.js")
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.fancybox').fancybox();
+        });
+    </script>
+}
+
+@section styles{ 
+    @Styles.Render("~/Content/css/jquery.fancybox.css")
+}

@@ -84,7 +84,7 @@ namespace WebSite.WebUtilities
         {
             string textWithoutAccent = RemoveDiacritics(text);
 
-            return Regex.Replace(textWithoutAccent, @"\b[&\s#@\.?]+", delegate(Match match)
+            return Regex.Replace(textWithoutAccent, @"\b[&\s#@\.\,?]+", delegate(Match match)
             {
                 string v = match.ToString();
                 return "-";

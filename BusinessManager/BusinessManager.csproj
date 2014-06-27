@@ -62,6 +62,7 @@
     <Compile Include="Data\RoleDAL.cs" />
     <Compile Include="Data\UserDAL.cs" />
     <Compile Include="Data\UserroleDAL.cs" />
+    <Compile Include="Models\BaseDataModel.cs" />
     <Compile Include="Models\MenuDataModel.cs" />
     <Compile Include="Models\RoleDataModel.cs" />
     <Compile Include="Models\UserDataModel.cs" />

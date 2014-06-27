@@ -1,0 +1,54 @@
+@using System.Web.Optimization
+
+@model BusinessManager.Models.UserroleDataModel
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Crear Roles Usuario</h2>
+
+@using ( Html.BeginForm(null, null, FormMethod.Post ,new { enctype = "multipart/form-data" })) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend></legend>
+
+        
+	 @{ Html.RenderAction("ForeignKeyDisplay", "Admin", new { fieldName = "UserID", fieldValue = @Model != null ? @Model.UserID : 0, primaryTable = "User", readOnly = false }); }
+	 @{ Html.RenderAction("ForeignKeyDisplay", "Admin", new { fieldName = "RoleID", fieldValue = @Model != null ? @Model.RoleID : 0, primaryTable = "Role", readOnly = false }); }
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @if (Session["ParentID"] != null)
+    {
+    @Html.ActionLink("Back to List", "Index", new { id = Convert.ToInt32(Session["userroleParentID"]) })    
+    }
+    else
+    {
+    @Html.ActionLink("Back to List", "Index")
+    }
+</div>
+
+@section scripts{ 
+
+    @Scripts.Render("~/Scripts/jquery.js")
+    @Scripts.Render("~/Scripts/ckeditor/ckeditor.js") 
+    @Scripts.Render("~/Scripts/jquery.fancybox.js")
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.fancybox').fancybox();
+        });
+    </script>
+}
+
+@section styles{ 
+    @Styles.Render("~/Content/css/jquery.fancybox.css")
+}

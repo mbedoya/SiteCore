@@ -20,37 +20,39 @@ namespace WebSite.Controllers.Admin
         {
             List<MenuDataModel> menus = MenuBO.GetInstance().GetAll(id);
 
-            CacheManager cache = CacheManager.GetInstance();
+            string title = Misc.GetURLString("Mi Mascota, su alimentación y nosotros");
 
-            int count=1000000;
+            List<MenuDataModel> menuBlogItems = MenuBO.GetInstance().GetMenuItems("MenuBlog");            
 
-            DateTime start = DateTime.Now;
-            for (int i = 1; i <= count; i++)
-            {
-                MenuDataModel m = new MenuDataModel();
-                m.ID = i;
-                m.Name = menus[0].Name;
-                m.MenuOrder = menus[0].MenuOrder;
+            //int count=1000000;
 
-                cache.AddObject<MenuDataModel>(m);                
-            }            
+            //DateTime start = DateTime.Now;
+            //for (int i = 1; i <= count; i++)
+            //{
+            //    MenuDataModel m = new MenuDataModel();
+            //    m.ID = i;
+            //    m.Name = menus[0].Name;
+            //    m.MenuOrder = menus[0].MenuOrder;
 
-            DateTime end = DateTime.Now;
-            System.IO.File.AppendAllText(@"C:\Temp\Diff.txt", count.ToString() + " Difference to Add " + Misc.GetDateDifferenceInMiliseconds(start, end) + " \r\n");
+            //    cache.AddObject<MenuDataModel>(m);                
+            //}            
 
-            start = DateTime.Now;
-            for (int i = 1; i <= count; i++)
-            {
-                int second = 0;
-                MenuDataModel cachedMenu = cache.GetObject<MenuDataModel>(i + second);
-                if (cachedMenu == null)
-                {
-                    menus[0].ID = i + second;
-                    cache.AddObject<MenuDataModel>(menus[0]);
-                }
-            }
-            end = DateTime.Now;
-            System.IO.File.AppendAllText(@"C:\Temp\Diff.txt", count.ToString() + " Difference to Get " + Misc.GetDateDifferenceInMiliseconds(start, end) + " \r\n");
+            //DateTime end = DateTime.Now;
+            //System.IO.File.AppendAllText(@"C:\Temp\Diff.txt", count.ToString() + " Difference to Add " + Misc.GetDateDifferenceInMiliseconds(start, end) + " \r\n");
+
+            //start = DateTime.Now;
+            //for (int i = 1; i <= count; i++)
+            //{
+            //    int second = 0;
+            //    MenuDataModel cachedMenu = cache.GetObject<MenuDataModel>(i + second);
+            //    if (cachedMenu == null)
+            //    {
+            //        menus[0].ID = i + second;
+            //        cache.AddObject<MenuDataModel>(menus[0]);
+            //    }
+            //}
+            //end = DateTime.Now;
+            //System.IO.File.AppendAllText(@"C:\Temp\Diff.txt", count.ToString() + " Difference to Get " + Misc.GetDateDifferenceInMiliseconds(start, end) + " \r\n");
 
             return View(menus);
         }

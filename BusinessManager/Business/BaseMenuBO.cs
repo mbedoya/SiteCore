@@ -16,7 +16,7 @@ namespace BusinessManager.Business
             return MenuDAL.GetAll();
         }
 
-        public virtual MenuDataModel Get(int id)
+        public virtual MenuDataModel Get(int id, bool useCache = false)
         {
             return MenuDAL.Get(id);
         }

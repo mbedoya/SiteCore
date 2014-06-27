@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cache\CacheManager.cs" />
+    <Compile Include="Cache\CollectionItem.cs" />
+    <Compile Include="Cache\CollectionStore.cs" />
     <Compile Include="Cache\ObjectStore.cs" />
     <Compile Include="Cache\StoreItem.cs" />
     <Compile Include="FileManager.cs" />

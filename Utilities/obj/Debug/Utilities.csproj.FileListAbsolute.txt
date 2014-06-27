@@ -6,3 +6,4 @@ C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\Utilities\bin\De
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\Utilities\bin\Debug\Utilities_Core.pdb
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\Utilities\obj\Debug\Utilities_Core.dll
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\Utilities\obj\Debug\Utilities_Core.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\Utilities\obj\Debug\Utilities.csprojResolveAssemblyReference.cache

@@ -31,7 +31,6 @@ C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\obj\Debug\MainActivity.g.cs
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\obj\Debug\BusinessWorkflow.csproj.XamlGeneratedCodeFileListAbsolute.txt
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\obj\Debug\BusinessWorkflow.csproj.XamlGeneratedXamlFileListAbsolute.txt
-C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\obj\Debug\BusinessWorkflow.csproj.FileListAbsolute.txt
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\obj\Debug\BusinessWorkflow.dll
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\obj\Debug\BusinessWorkflow.pdb
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\obj\Debug\InProcessTempFiles\MainActivity.g.cs

@@ -1,0 +1,2 @@
+obj\Release\_BusinessWorkflow.g.cs
+obj\Release\MainActivity.g.cs

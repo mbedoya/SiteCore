@@ -138,6 +138,15 @@ namespace Utilities.Cache
             Objects.Insert(nearIndex, value);            
         }
 
+        public void UpdateObject(T value)
+        {
+            int objectIndex = FindIndex(Convert.ToInt32(value.ToString()));
+            if (objectIndex >= 0)
+            {
+                Objects[objectIndex] = value;
+            }
+        }
+
         public T FindObject(int? id)
         {
             int objectIndex = FindIndex(id);
@@ -148,8 +157,16 @@ namespace Utilities.Cache
             else
             {
                 return default(T);
+            }            
+        }
+
+        public void RemoveObject(int? id)
+        {
+            int objectIndex = FindIndex(id);
+            if (objectIndex >= 0)
+            {
+                Objects.RemoveAt(objectIndex);
             }
-            
         }
     }
 }
