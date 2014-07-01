@@ -41,7 +41,7 @@ namespace Utilities.Cache
         {
             ObjectStore store = ObjectStore.GetInstance();
             store.RemoveObject<T>(id);
-        }
+        }        
 
         /// <summary>
         /// Add Collection Object
@@ -65,6 +65,21 @@ namespace Utilities.Cache
         {
             CollectionStore store = CollectionStore.GetInstance();
             return store.GetCollection<T>(name);
+        }
+
+        /// <summary>
+        /// Remove Collection Object
+        /// </summary>
+        /// <param name="name"></param>
+        public void RemoveObject(string name)
+        {
+            CollectionStore store = CollectionStore.GetInstance();
+            store.RemoveCollection(name);
+        }
+
+        public List<CollectionItem> GetCollectionObjects()
+        {
+            return CollectionStore.GetInstance().Items;
         }
     }
 }

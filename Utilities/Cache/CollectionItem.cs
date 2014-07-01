@@ -14,6 +14,14 @@ namespace Utilities.Cache
         }
         private List<int> keys;
 
+        public int Count
+        {
+            get
+            {
+                return keys.Count;
+            }
+        }
+
         public void AddObject<T>(string name, List<T> value)
         {
             this.name = name;

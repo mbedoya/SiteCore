@@ -40,15 +40,24 @@ namespace Utilities.Cache
 
         public List<T> GetCollection<T>(string name)
         {
-            foreach (var item in items)
+            CollectionItem item = items.Find(x => x.Name == name);
+
+            if (item != null)
             {
-                if(item.Name == name)
-                {
-                    return item.GetObject<T>();
-                }
+                return item.GetObject<T>();
             }
 
             return default(List<T>);
+        }
+
+        public void RemoveCollection(string name)
+        {
+            CollectionItem item = items.Find(x => x.Name == name);
+
+            if (item != null)
+            {
+                items.Remove(item);
+            }
         }
     }
 }
