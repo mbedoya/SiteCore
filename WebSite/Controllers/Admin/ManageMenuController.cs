@@ -20,7 +20,7 @@ namespace WebSite.Controllers.Admin
         {
             List<MenuDataModel> menus = MenuBO.GetInstance().GetAll(id);
 
-            List<MenuDataModel> list = MenuBO.GetInstance().GetMenuItems("MenuBlog");
+            //List<MenuDataModel> list = MenuBO.GetInstance().GetMenuItems("MenuBlog");
         
             //UserDataModel user;
             //user = new UserDataModel();
