@@ -23,6 +23,7 @@ C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\bin\Debug\BusinessWorkflow.pdb
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\bin\Debug\BusinessManager_Core.dll
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\bin\Debug\Utilities_Core.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\bin\Debug\log4net.dll
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\bin\Debug\BusinessManager_Core.pdb
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\bin\Debug\Utilities_Core.pdb
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\obj\Debug\BusinessWorkflow.csprojResolveAssemblyReference.cache

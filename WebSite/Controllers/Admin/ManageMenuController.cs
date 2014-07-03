@@ -20,9 +20,55 @@ namespace WebSite.Controllers.Admin
         {
             List<MenuDataModel> menus = MenuBO.GetInstance().GetAll(id);
 
-            string title = Misc.GetURLString("Mi Mascota, su alimentación y nosotros");
+            List<MenuDataModel> list = MenuBO.GetInstance().GetMenuItems("MenuBlog");
+        
+            //UserDataModel user;
+            //user = new UserDataModel();
+            //user.ID = 50;            
+            //CacheManager.GetInstance().AddObject<UserDataModel>(user);
 
-            List<MenuDataModel> menuBlogItems = MenuBO.GetInstance().GetMenuItems("MenuBlog");            
+            //user = new UserDataModel();
+            //user.ID = 40;
+            //CacheManager.GetInstance().AddObject<UserDataModel>(user);
+
+            //user = new UserDataModel();
+            //user.ID = 20;
+            //CacheManager.GetInstance().AddObject<UserDataModel>(user);
+
+            //user = new UserDataModel();
+            //user.ID = 60;
+            //CacheManager.GetInstance().AddObject<UserDataModel>(user);
+
+            //user = new UserDataModel();
+            //user.ID = 80;
+            //CacheManager.GetInstance().AddObject<UserDataModel>(user);
+
+            //user = new UserDataModel();
+            //user.ID = 35;
+            //CacheManager.GetInstance().AddObject<UserDataModel>(user);
+
+            //user = new UserDataModel();
+            //user.ID = 1;
+            //CacheManager.GetInstance().AddObject<UserDataModel>(user);
+
+            //user = new UserDataModel();
+            //user.ID = 2;
+            //CacheManager.GetInstance().AddObject<UserDataModel>(user);
+
+            //user = new UserDataModel();
+            //user.ID = 79;
+            //CacheManager.GetInstance().AddObject<UserDataModel>(user);
+
+            //user = CacheManager.GetInstance().GetObject<UserDataModel>(1);
+            //user = CacheManager.GetInstance().GetObject<UserDataModel>(2);
+            //user = CacheManager.GetInstance().GetObject<UserDataModel>(35);
+            //user = CacheManager.GetInstance().GetObject<UserDataModel>(79);
+            //user = CacheManager.GetInstance().GetObject<UserDataModel>(112);
+            //user = CacheManager.GetInstance().GetObject<UserDataModel>(80);
+            //user = CacheManager.GetInstance().GetObject<UserDataModel>(60);
+            //user = CacheManager.GetInstance().GetObject<UserDataModel>(20);
+            //user = CacheManager.GetInstance().GetObject<UserDataModel>(40);
+            //user = CacheManager.GetInstance().GetObject<UserDataModel>(50);
 
             //int count=1000000;
 

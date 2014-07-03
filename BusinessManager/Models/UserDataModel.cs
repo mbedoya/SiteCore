@@ -6,10 +6,8 @@ using System.Web;
 
 namespace BusinessManager.Models
 {
-    public class UserDataModel
-    {
-
-        public int? ID { get; set; }
+    public class UserDataModel : BaseDataModel
+    {        
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }

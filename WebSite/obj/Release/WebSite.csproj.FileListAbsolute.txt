@@ -50,3 +50,4 @@ C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\es\S
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\obj\Release\WebSite.csprojResolveAssemblyReference.cache
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\obj\Release\WebSite_Core.dll
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\obj\Release\WebSite_Core.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\log4net.dll

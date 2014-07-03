@@ -9,8 +9,7 @@ namespace WebSite
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
-
-            filters.Add(new CheckAuthentication());
+            filters.Add(new FilterActions());            
         }
     }
 }

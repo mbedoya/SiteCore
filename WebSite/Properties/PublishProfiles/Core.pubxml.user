@@ -14,10 +14,10 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>06/23/2014 06:58:34</publishTime>
     </File>
     <File Include="bin/BusinessManager_Core.dll">
-      <publishTime>06/30/2014 09:43:28</publishTime>
+      <publishTime>07/03/2014 13:56:46</publishTime>
     </File>
     <File Include="bin/BusinessWorkflow.dll">
-      <publishTime>06/30/2014 09:43:30</publishTime>
+      <publishTime>07/03/2014 13:56:48</publishTime>
     </File>
     <File Include="bin/es/System.Net.Http.Formatting.resources.dll">
       <publishTime>06/23/2014 06:58:34</publishTime>
@@ -51,6 +51,9 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     </File>
     <File Include="bin/es/System.Web.WebPages.resources.dll">
       <publishTime>06/23/2014 06:58:34</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>11/18/2013 05:51:44</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>06/23/2014 06:58:34</publishTime>
@@ -95,13 +98,13 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>06/23/2014 06:58:34</publishTime>
     </File>
     <File Include="bin/Utilities_Core.dll">
-      <publishTime>06/30/2014 09:43:27</publishTime>
+      <publishTime>07/03/2014 13:56:45</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>06/23/2014 06:58:35</publishTime>
     </File>
     <File Include="bin/WebSite_Core.dll">
-      <publishTime>06/30/2014 09:43:31</publishTime>
+      <publishTime>07/03/2014 13:56:49</publishTime>
     </File>
     <File Include="Content/css/blank.gif">
       <publishTime>06/23/2014 06:58:33</publishTime>
@@ -144,6 +147,9 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     </File>
     <File Include="Global.asax">
       <publishTime>06/23/2014 06:58:33</publishTime>
+    </File>
+    <File Include="log4net.config">
+      <publishTime>07/02/2014 10:23:38</publishTime>
     </File>
     <File Include="packages.config">
       <publishTime>06/23/2014 06:58:34</publishTime>
@@ -1157,7 +1163,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>06/23/2014 06:58:34</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>06/30/2014 09:43:44</publishTime>
+      <publishTime>07/03/2014 13:56:50</publishTime>
     </File>
   </ItemGroup>
 </Project>

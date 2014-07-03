@@ -71,6 +71,7 @@ C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\Syst
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\System.Web.WebPages.Razor.dll
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\Utilities_Core.dll
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\WebGrease.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\log4net.dll
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\BusinessManager_Core.pdb
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\BusinessWorkflow.pdb
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\WebSite\bin\Utilities_Core.pdb

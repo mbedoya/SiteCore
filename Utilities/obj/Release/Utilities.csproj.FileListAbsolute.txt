@@ -3,3 +3,4 @@ C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\Utilities\bin\Re
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\Utilities\obj\Release\Utilities.csprojResolveAssemblyReference.cache
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\Utilities\obj\Release\Utilities_Core.dll
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\Utilities\obj\Release\Utilities_Core.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\Utilities\bin\Release\log4net.dll

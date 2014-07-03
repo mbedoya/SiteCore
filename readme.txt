@@ -60,4 +60,6 @@ public ActionResult ForeignKeyDisplay(string fieldName, int? fieldValue, string 
 12. Replace "ForeignKeyDisplay", "Admin" to "ForeignKeyDisplay", "Home"
 13. Move ForeignKeyDisplay.cshtml to Shared
 14. Adicionar System.Web to BusinessManager
-15. Adicionar filters.Add(new CheckAuthentication()); to FilterConfig en Website
+15. Adicionar filters.Add(new CheckAuthentication()); filters.Add(new RegisterAction()); to FilterConfig en Website
+16. Add <add key="log4net.Config" value="log4net.config"/> to AppSettings
+    Copy log4net.config to project

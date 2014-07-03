@@ -14,7 +14,7 @@ namespace Utilities.Cache
         }
 
         //Gets the Index where new Object must be inserted
-        private int FindNearIdex(int? id)
+        private int FindInsertIdex(int? id)
         {
             if (Objects.Count == 0)
             {
@@ -37,9 +37,13 @@ namespace Utilities.Cache
             
             int index = Objects.Count / 2;
             int nextIndex = 0;
-            decimal interval = Convert.ToDecimal(index) / 2;
+            double interval = Convert.ToDouble(index) / 2;
 
-            while (true)
+            if(interval < 1){
+                interval = 1;
+            }
+
+            while (interval >= 0.5)
             {
                 if (Objects[index].Equals(id))
                 {
@@ -70,13 +74,32 @@ namespace Utilities.Cache
                 }
 
                 interval = interval / 2;
-                if (interval < 1) 
-                {
-                    interval = 1;
-                }
             }
 
-            return index;
+            if (index <= Objects.Count - 1)
+            {
+                if (id > Convert.ToInt32(Objects[index].ToString()))
+                {
+                    return index + 1;
+                }
+                else
+                {
+                    if (index > 0 && id < Convert.ToInt32(Objects[index].ToString()) && id < Convert.ToInt32(Objects[index - 1].ToString()))
+                    {
+                        return index - 1;
+                    }
+                    else
+                    {
+                        return index;
+                    }
+
+                }
+            }
+            else
+            {
+                return index;
+            }
+            
         }
 
         //Get the index of an object
@@ -89,9 +112,14 @@ namespace Utilities.Cache
 
             int index = Objects.Count / 2;
             int nextIndex = index;
-            decimal interval = Convert.ToDecimal(index) / 2;
+            double interval = Convert.ToDouble(index) / 2;
 
-            while (true)
+            if (interval < 1)
+            {
+                interval = 1;
+            }
+
+            while (interval > 0.5)
             {
                 if (Objects[index].Equals(id))
                 {
@@ -122,20 +150,38 @@ namespace Utilities.Cache
                 }
 
                 interval = interval / 2;
-
-                if (interval < 1)
-                {
-                    interval = 1;
-                }
             }
+
+            if (index > 0)
+            {
+                if (index + 1 <= Objects.Count && id == Convert.ToInt32(Objects[index].ToString()))
+                {
+                    return index;
+                }
+                else
+                {
+                    if (index > 0 && id == Convert.ToInt32(Objects[index - 1].ToString()))
+                    {
+                        return index - 1;
+                    }
+                    else
+                    {
+                        if (index <= Objects.Count - 2 && id == Convert.ToInt32(Objects[index + 1].ToString()))
+                        {
+                            return index + 1;
+                        }
+                    }
+
+                }
+            }          
 
             return -1;
         }
 
         public void AddObject(T value)
         {
-            int nearIndex = FindNearIdex(Convert.ToInt32(value.ToString()));
-            Objects.Insert(nearIndex, value);            
+            int insertIndex = FindInsertIdex(Convert.ToInt32(value.ToString()));
+            Objects.Insert(insertIndex, value);            
         }
 
         public void UpdateObject(T value)

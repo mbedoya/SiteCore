@@ -120,7 +120,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\Filters\CheckAuthentication.cs" />
+    <Compile Include="App_Start\Filters\FilterActions.cs" />
     <Compile Include="Controllers\Admin\AdminController.cs" />
     <Compile Include="Controllers\Admin\ManageCacheController.cs" />
     <Compile Include="Controllers\Admin\ManageMenuController.cs" />
@@ -536,6 +536,7 @@
     <Content Include="Views\ManageUserrole\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="log4net.config" />
     <None Include="Properties\PublishProfiles\Core.pubxml" />
     <Content Include="Views\ManageCache\Index.cshtml" />
   </ItemGroup>

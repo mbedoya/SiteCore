@@ -31,8 +31,10 @@ namespace Utilities.Cache
 
             foreach (var item in value)
             {
+                T o = objectStore.GetObject<T>(Convert.ToInt32(item.ToString()));
+
                 //if the object is not in store, then add it
-                if (objectStore.GetObject<T>(Convert.ToInt32(item.ToString())) == null)
+                if (o == null)
                 {
                     objectStore.AddObject<T>(item);
                 }

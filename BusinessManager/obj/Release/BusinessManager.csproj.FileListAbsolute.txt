@@ -6,3 +6,4 @@ C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessManager\
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessManager\obj\Release\BusinessManager.csprojResolveAssemblyReference.cache
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessManager\obj\Release\BusinessManager_Core.dll
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessManager\obj\Release\BusinessManager_Core.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessManager\bin\Release\log4net.dll
