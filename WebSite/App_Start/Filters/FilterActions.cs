@@ -17,10 +17,11 @@ namespace WebSite.App_Start.Filters
             if(filterContext.HttpContext.Request.Path.ToLower().Contains("/admin/") ||
                 filterContext.HttpContext.Request.Path.ToLower().EndsWith("/admin"))
             {
-                if (SecurityManager.SecurityEnabled() && !SecurityManager.SesionStarted())
+                if (SecurityManager.SecurityEnabled() && !SecurityManager.SesionStarted() || 
+                    SecurityManager.SecurityEnabled() && SecurityManager.SesionStarted() && SecurityManager.GetLoggedUser().Role != UserRole.Admin)
                 {
                     filterContext.Result = new RedirectResult("~/Security/");
-                }                
+                }
             }
 
             base.OnActionExecuting(filterContext);

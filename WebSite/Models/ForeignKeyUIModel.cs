@@ -9,7 +9,8 @@ namespace WebSite.Models
     {
         public string Name { get; set; }
         public int? Value { get; set; }
-        public bool ReadOnly { get; set; }
+        public string TextValue { get; set; }
+        public bool ReadOnly { get; set; }        
         public List<BaseUIModel> Collection { get; set; }
     }
 }

@@ -37,4 +37,3 @@ C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\obj\Debug\InProcessTempFiles\MainActivity.g.cs
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\obj\Debug\InProcessTempFiles\MainActivity.g.xaml
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\obj\Debug\InProcessTempFiles\_BusinessWorkflow.g.cs
-C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\SiteCore\BusinessWorkflow\obj\Debug\BusinessWorkflow.csproj.FileListAbsolute.txt

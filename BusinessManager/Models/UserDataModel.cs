@@ -23,5 +23,7 @@ namespace BusinessManager.Models
                 return FirstName + " " + LastName;
             }
         }
+
+        public string Rol { get; set; }
     }
 }

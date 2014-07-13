@@ -14,10 +14,10 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>06/23/2014 06:58:34</publishTime>
     </File>
     <File Include="bin/BusinessManager_Core.dll">
-      <publishTime>07/03/2014 13:56:46</publishTime>
+      <publishTime>07/13/2014 09:56:04</publishTime>
     </File>
     <File Include="bin/BusinessWorkflow.dll">
-      <publishTime>07/03/2014 13:56:48</publishTime>
+      <publishTime>07/13/2014 09:56:09</publishTime>
     </File>
     <File Include="bin/es/System.Net.Http.Formatting.resources.dll">
       <publishTime>06/23/2014 06:58:34</publishTime>
@@ -104,7 +104,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>06/23/2014 06:58:35</publishTime>
     </File>
     <File Include="bin/WebSite_Core.dll">
-      <publishTime>07/03/2014 13:56:49</publishTime>
+      <publishTime>07/13/2014 11:01:32</publishTime>
     </File>
     <File Include="Content/css/blank.gif">
       <publishTime>06/23/2014 06:58:33</publishTime>
@@ -1163,7 +1163,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>06/23/2014 06:58:34</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>07/03/2014 13:56:50</publishTime>
+      <publishTime>07/13/2014 11:01:34</publishTime>
     </File>
   </ItemGroup>
 </Project>

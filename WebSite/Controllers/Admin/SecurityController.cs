@@ -30,7 +30,8 @@ namespace WebSite.Controllers.Admin
                 {
                     ID = user.ID,
                     Name = user.FirstName + " " + user.LastName,
-                    Email = user.Email
+                    Email = user.Email,
+                    Role = !String.IsNullOrEmpty(user.Rol) && user.Rol == UserRole.Admin.ToString() ? UserRole.Admin : UserRole.Visitor
                 });
 
                 return RedirectToAction("Index", "ManageMenu");

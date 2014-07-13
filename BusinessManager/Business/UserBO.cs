@@ -64,5 +64,28 @@ namespace BusinessManager.Business
             return UserDAL.CheckUser(email, EncryptionManager.MD5Encrypt(password));
         }
 
+        public void CreateAndLogin(UserDataModel user) 
+        {
+            UserDataModel dbUser = UserDAL.GetUserByEmail(user.Email);
+            //if user does not exist, then create him
+            if(dbUser == null)
+            {
+                user.Password = EncryptionManager.MD5Encrypt("12345");
+                user.DateCreated = DateTime.Now;
+                user.CreatedBy = UserDAL.GetUserByEmail("admin").ID;
+
+                UserDAL.Create(user);
+
+                dbUser = CheckUser(user.Email, EncryptionManager.MD5Encrypt("12345"));
+                dbUser.Rol = "";
+            }
+
+            SecurityManager.Login(new SecurityUserModel() { 
+                ID = dbUser.ID, 
+                Email = dbUser.Email,
+                Role = !String.IsNullOrEmpty(dbUser.Rol) && dbUser.Rol == UserRole.Admin.ToString() ? UserRole.Admin : UserRole.Visitor
+            });
+        }
+
     }
 }
